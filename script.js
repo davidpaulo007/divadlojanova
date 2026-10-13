@@ -277,7 +277,7 @@ renderProducts(); renderCart();
 /* ---------- Encomenda por WhatsApp ---------- */
 // >>> COLOCA AQUI O TEU NÚMERO DE WHATSAPP <<<
 // Código do país + número, só dígitos, sem espaços nem "+". Exemplo (Portugal): "351912345678"
-const WHATSAPP_NUMBER = "351000000000";
+const WHATSAPP_NUMBER = "351915807519";
 
 function cartTotalValue() { return cart.reduce((s, i) => s + i.price, 0); }
 
