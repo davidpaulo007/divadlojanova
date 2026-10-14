@@ -42,15 +42,20 @@ async function guardarNoSupabase(dadosCliente) {
    2. PRODUTOS E VARIÁVEIS DO SITE
    ========================================================= */
 const products = [
- {id:1,name:"Audemar Piguet 41",category:"classic",desc:"Automático · Aço 316L",price:219,images:["imagens/audemarpiguetfrente.jpg", "imagens/audemarpiguetlado.jpg", "imagens/audemarpiguetbaixo.jpg"]},
- {id:2,name:"Swarovsky Hiperbola Colar ",category:"colares",desc:"Cronógrafo · Cerâmica",price:26,images:["imagens/colarmoca.jpg","imagens/colarunico.jpg", "imagens/colarproximo.jpg"]},
- {id:3,name:"Swarovsky Brinco Mola Matrix",category:"colares",desc:"Automático · Couro italiano",price:25,images:["imagens/brincomoca.jpg", "imagens/brincotras.jpg", "imagens/brincounico.jpg"]},
- {id:4,name:"Rolex Day-Date",category:"limited",desc:"Edição limitada · 18K",price:12900,images:["imagens/rolexazufrentel.jpg","imagens/rolexazullado.jpg","imagens/rolexazuldeitado.jpg"]},
- {id:5,name:"Riviera Sport",category:"sport",desc:"Automático · Titânio",price:7350,images:["imagens/relogio-riviera.png"]},
- {id:6,name:"Minimal 36",category:"classic",desc:"Quartzo suíço · Aço",price:3100,images:["imagens/relogio-minimal.jpg"]},
- {id:7,name:"Luna Édition",category:"limited",desc:"Edição limitada · Diamantes",price:15800,images:["imagens/relogio-luna.jpg"]},
- {id:8,name:"Aureum Diver",category:"sport",desc:"Automático · 300M",price:8100,images:["imagens/relogio-aureum-diver.jpg"]},
- {id:9,name:"Rolex ",category:"colares",desc:"Automático · 300M",price:8100,images:["imagens/datejustfrente.jpg", "imagens/datejustlado.jpg", "imagens/datejustdeitado.jpg"]}
+  {id:1,name:"Rolex DateJust",category:"classic",desc:"Blue Fluted Motif Dial",price:141,images:["imagens/rolexagorafrente.jpg", "imagens/rolexagoraproximo.jpg", "imagens/rolexagoracoroa.jpg", "imagens/rolexagoraperto.jpg"]},
+ {id:2,name:"Swarovsky Hiperbola Colar ",category:"colares",desc:"",price:26,images:["imagens/colarmoca.jpg","imagens/colarunico.jpg", "imagens/colarproximo.jpg"]},
+ {id:3,name:"Swarovsky Brinco Mola Matrix",category:"colares",desc:"Aço Inoxidavel (Dourado)",price:25,images:["imagens/brincomoca.jpg", "imagens/brincotras.jpg", "imagens/brincounico.jpg"]},
+ {id:4,name:"Rolex Day-Date",category:"limited",desc:"Edição limitada · 18K",price:125,images:["imagens/rolexazufrentel.jpg","imagens/rolexazullado.jpg","imagens/rolexazuldeitado.jpg"]},
+ {id:5,name:"Swarovski Angelic",category:"Braceletes",desc:"Aço Inoxidavel (Prateado)",price:28,images:["imagens/swabraceleteprata.jpg", "imagens/swabraceletepratalado.jpg", "imagens/swabraceletepratafecha.jpg"]},
+{id:6,name:"Patek Philippe ",category:"classic",desc:"Aquanaut-Green",price:189,images:["imagens/patekverdefrente.jpg", "imagens/patekverdeperto.jpg", "imagens/patekverdetras.jpg"]},
+ {id:7,name:"Patek Philippe Nautilus Annual Calendar",category:"limited",desc:"Nautilus",price:210,images:["imagens/patekvinatgeprtoladofrente.jpg","imagens/patekvintagepretolado.jpg"]},
+ {id:8,name:"Swarovski Angelic",category:"Braceletes",desc:"Aço Inoxidavel (Dourado)",price:29,images:["imagens/swabraceleteouro.jpg", "imagens/swabraceleteourolado.jpg", "imagens/swabraceleteourofecha.jpg"]},
+ {id:9,name:"Rolex DateJUst",category:"classic",desc:"Automático·Rolesor",price:122,images:["imagens/datejustfrente.jpg", "imagens/datejustlado.jpg"]},
+ {id:10,name:"Swarovski Swan Pendant",category:"colares",desc:"Aço Inoxidavel (Ouro Rosa)",price:27,images:["imagens/colarourorosamoca.jpg","imagens/colarourososafrente.jpg", "imagens/colarourorosadiamante.jpg"]},
+ {id:11,name:"Swarovski Swan Pendant",category:"colares",desc:"Aço Inoxidavel (Ouro Branco)",price:24,images:["imagens/colarourobrancomoca.jpg","imagens/colarourobrancolado.jpg", "imagens/colarourobrancofrente.jpg"]},
+{id:12,name:"Patek Philippe",category:"limited",desc:"Aquanaut-Blue",price:189,images:["imagens/patekfrentebranco.jpg","imagens/patektrasbranco.jpg"]},
+{id:13,name:"Audemars Piguet",category:"limited",desc:"Royal Oak",price:179,images:["imagens/apprata.jpg","imagens/appratafrente.jpg"]},
+{id:14,name:"Swarovski Swan Pendant - Una ",category:"colares",desc:"Aço Inoxidavel (Ouro Branco)",price:23,images:["imagens/colarpretoebrancomoca.jpg","imagens/colarapretoebranco.jpg"]},
 ];
 
 let cart = [];
