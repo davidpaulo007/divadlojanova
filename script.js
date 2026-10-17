@@ -67,7 +67,12 @@ const products = [
 {id:24,name:"Cartier",category:"classic",desc:"Santos Blue Dial (Large Model)",price:120,images:["imagens/cartierpratazuldeitado.jpg","imagens/cartierpratazullado.jpg","imagens/cartierpratazul.jpg"]},
 {id:25,name:"Cartier",category:"Vintage",desc:"Santos Green Dial (Medium Model)",price:149,images:["imagens/cartiercouroverdeperto.jpg","imagens/cartiercouroverde.jpg"]},
 {id:26,name:"Cartier",category:"classic",desc:"Santos Silver Dial (Medium Model)",price:110,images:["imagens/cartierpratabranco.jpg","imagens/cartierpratabrancolado.jpg","imagens/cartierpratabrancotras.jpg"]},
-{id:27,name:"Cartier",category:"classic",desc:"Santos Dumont (Medium Model)",price:129,images:["imagens/cartiercouroazul.jpg","imagens/cartiercouroazullado.jpg","imagens/cartiercouroazulfrente.jpg"]}
+{id:27,name:"Cartier",category:"classic",desc:"Santos Dumont (Medium Model)",price:129,images:["imagens/cartiercouroazul.jpg","imagens/cartiercouroazullado.jpg","imagens/cartiercouroazulfrente.jpg"]},
+{id:28,name:"Tissot",category:"Vintage",desc:"Chrono XL Quartz",price:69,images:["imagens/tissotcastanhoazulpulso.jpg","imagens/tissotcastnhazulperto.jpg","imagens/tissotcasanhoazul.jpg"]},
+{id:29,name:"Tissot",category:"classic",desc:"Le Locle Automatic",price:73,images:["imagens/tissotcouroazul.jpg","imagens/tissotcouroazulpulso.jpg","imagens/tissotcouroazultras.jpg"]},
+{id:30,name:"Tissot",category:"Vintage",desc:"Le Locle Powermatic ",price:85,images:["imagens/tissotcourocastanho.jpg","imagens/tissotcourocastanholado.jpg","imagens/tissotcourocastanhotras.jpg"]},
+{id:31,name:"Tissot",category:"classic",desc:"PRX Automatic Chronograp",price:82,images:["imagens/tissotprataazulperto.jpg","imagens/tissotprataazul.jpg","imagens/tissotprataazultras.jpg"]},
+{id:32,name:"Tissot",category:"classic",desc:"PRX Quartz (Mint Green)",price:78,images:["imagens/tissotprataverde.jpg","imagens/tissotprataverdepulso.jpg","imagens/tissotprataverdetras.jpg"]} 
 ];
 let cart = [];
 let activeImgIndex = 0;
