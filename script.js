@@ -68,7 +68,7 @@ const products = [
 {id:25,name:"Cartier",category:"Vintage",desc:"Santos Green Dial (Medium Model)",price:149,images:["imagens/cartiercouroverdeperto.jpg","imagens/cartiercouroverde.jpg"]},
 {id:26,name:"Cartier",category:"classic",desc:"Santos Silver Dial (Medium Model)",price:110,images:["imagens/cartierpratabranco.jpg","imagens/cartierpratabrancolado.jpg","imagens/cartierpratabrancotras.jpg"]},
 {id:27,name:"Cartier",category:"classic",desc:"Santos Dumont (Medium Model)",price:129,images:["imagens/cartiercouroazul.jpg","imagens/cartiercouroazullado.jpg","imagens/cartiercouroazulfrente.jpg"]}
-
+];
 let cart = [];
 let activeImgIndex = 0;
 const productsEl = document.querySelector("#products");
