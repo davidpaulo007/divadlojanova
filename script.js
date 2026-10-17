@@ -42,7 +42,7 @@ async function guardarNoSupabase(dadosCliente) {
    2. PRODUTOS E VARIÁVEIS DO SITE
    ========================================================= */
 const products = [
-  {id:1,name:"Rolex DateJust",category:"classic",desc:"Blue Fluted Motif Dial",price:141,images:["imagens/rolexagorafrente.jpg", "imagens/rolexagoraproximo.jpg", "imagens/rolexagoracoroa.jpg", "imagens/rolexagoraperto.jpg"]},
+ {id:1,name:"Rolex DateJust",category:"classic",desc:"Blue Fluted Motif Dial",price:141,images:["imagens/rolexagorafrente.jpg", "imagens/rolexagoraproximo.jpg", "imagens/rolexagoracoroa.jpg", "imagens/rolexagoraperto.jpg"]},
  {id:2,name:"Swarovsky Hiperbola Colar ",category:"colares",desc:"",price:26,images:["imagens/colarmoca.jpg","imagens/colarunico.jpg", "imagens/colarproximo.jpg"]},
  {id:3,name:"Swarovsky Brinco Mola Matrix",category:"colares",desc:"Aço Inoxidavel (Dourado)",price:25,images:["imagens/brincomoca.jpg", "imagens/brincotras.jpg", "imagens/brincounico.jpg"]},
  {id:4,name:"Rolex Day-Date",category:"limited",desc:"Edição limitada · 18K",price:125,images:["imagens/rolexazufrentel.jpg","imagens/rolexazullado.jpg","imagens/rolexazuldeitado.jpg"]},
@@ -56,7 +56,18 @@ const products = [
 {id:12,name:"Patek Philippe",category:"limited",desc:"Aquanaut-Blue",price:189,images:["imagens/patekfrentebranco.jpg","imagens/patektrasbranco.jpg"]},
 {id:13,name:"Audemars Piguet",category:"limited",desc:"Royal Oak",price:179,images:["imagens/apprata.jpg","imagens/appratafrente.jpg"]},
 {id:14,name:"Swarovski Swan Pendant - Una ",category:"colares",desc:"Aço Inoxidavel (Ouro Branco)",price:23,images:["imagens/colarpretoebrancomoca.jpg","imagens/colarapretoebranco.jpg"]},
-];
+{id:15,name:"Swarovski Angelic Necklace",category:"colares",desc:"Angelic Bracelet (Aço Inoxidavel- Prateado)",price:23,images:["imagens/swacolarbolaprata.jpg","imagens/swacolarbolapratafrente.jpg" ,"imagens/swacolarbolapratalado.jpg"]},
+{id:16,name:"Swarovski Angelic Necklace",category:"colares",desc:"Angelic Bracelet (Aço Inoxidavel- Dourado)",price:25,images:["imagens/swacolarbolaouro.jpg","imagens/swacolarbolaourofrente.jpg" ,"imagens/swacolarbolaourotras.jpg"]},
+{id:18,name:"AP & SWATCH",category:"sport",desc:"Lan Ba",price:79,images:["imagens/apxswatchazulpulso.jpg" ,"imagens/apxswatchperto.jpg","imagens/apxswatchazultras.jpg"]},
+{id:19,name:"AP & SWATCH",category:"sport",desc:"Huit Blanc",price:82,images:["imagens/apxswatchbrancopulso.jpg","imagens/apxswatchbrancoperto.jpg","imagens/apxswatchbrancotras.jpg"]},
+{id:20,name:"AP & SWATCH",category:"sport",desc:"Otto Rosso",price:79,images:["imagens/apxswatchrosapulso.jpg","imagens/apxswatchrosaperto.jpg","imagens/apxswatchrosatras.jpg"]},
+{id:21,name:"Swarovski Gema",category:"Braceletes",desc:"Tennis/Cluster (Aço Inoxidavel - Prateado)",price:20,images:["imagens/braceletesdiamoca.jpg","imagens/braceletesdialado.jpg","imagens/braceletesdiafrente.jpg"]},
+{id:22,name:"Swarovski Iconic Swan Pendant",category:"colares",desc:"Jet Black Crystals",price:22,images:["imagens/swapretomoca.jpg","imagens/swapretofrente.jpg"]},
+{id:23,name:"Cartier",category:"classic",desc:"Santos Two Tone ",price:121,images:["imagens/cartierprataouroperto.jpg","imagens/cartierprataourotras.jpg","imagens/Cartierprataouro.jpg"]},
+{id:24,name:"Cartier",category:"classic",desc:"Santos Blue Dial (Large Model)",price:120,images:["imagens/cartierpratazuldeitado.jpg","imagens/cartierpratazullado.jpg","imagens/cartierpratazul.jpg"]},
+{id:25,name:"Cartier",category:"Vintage",desc:"Santos Green Dial (Medium Model)",price:149,images:["imagens/cartiercouroverdeperto.jpg","imagens/cartiercouroverde.jpg"]},
+{id:26,name:"Cartier",category:"classic",desc:"Santos Silver Dial (Medium Model)",price:110,images:["imagens/cartierpratabranco.jpg","imagens/cartierpratabrancolado.jpg","imagens/cartierpratabrancotras.jpg"]},
+{id:27,name:"Cartier",category:"classic",desc:"Santos Dumont (Medium Model)",price:129,images:["imagens/cartiercouroazul.jpg","imagens/cartiercouroazullado.jpg","imagens/cartiercouroazulfrente.jpg"]}
 
 let cart = [];
 let activeImgIndex = 0;
