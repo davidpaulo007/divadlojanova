@@ -99,8 +99,7 @@
       t.classList.add("active");
       document.querySelector("#section-"+t.dataset.tab).classList.add("active");
     }));
-
-    function euro(n){return new Intl.NumberFormat("pt-PT",{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(n)}
+function euro(n){return new Intl.NumberFormat("pt-PT",{style:"currency",currency:"EUR",minimumFractionDigits:0,maximumFractionDigits:2}).format(n)}
 
     function renderCustomers(users){
       document.querySelector("#adminCount").textContent = users.length + (users.length===1 ? " cliente registado" : " clientes registados");
