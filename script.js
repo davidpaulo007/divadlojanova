@@ -315,7 +315,7 @@ function fazerEncomenda() {
     return;
   }
 
-  if (!/^\d{9,15}$/.test(WHATSAPP_NUMBER) || WHATSAPP_NUMBER === "351915807519") {
+  if (!/^\d{9,15}$/.test(WHATSAPP_NUMBER) || WHATSAPP_NUMBER === "351000000000") {
     alert("O número de WhatsApp da loja ainda não foi configurado no script.js.");
     return;
   }
