@@ -77,6 +77,7 @@ const products = [
   
 ];
 
+let cart = [];
 let activeImgIndex = 0;
 const productsEl = document.querySelector("#products");
 const euro = n => new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR", minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(n);
@@ -100,7 +101,7 @@ function renderCart() {
     el.innerHTML = cart.map((i, idx) => `<div class="cart-row"><div class="cart-thumb">${i.images && i.images[0] ? `<img src="${i.images[0]}" alt="${i.name}">` : ""}</div><div><h4>${i.name}</h4><p>${euro(i.price)}</p></div><button class="remove" data-remove="${idx}">×</button></div>`).join("");
   }
   document.querySelector("#cartCount").textContent = cart.length;
-  document.querySelector("#cartTotal").textContent = euro(cart.reduce((s, i) => s + i.price, 0));
+  document.querySelector("#cartTotal").textContent = euro(cartTotalValue());
 }
 
 function openCart() { document.querySelector("#cart").classList.add("open"); document.querySelector("#overlay").classList.add("show"); }
@@ -302,7 +303,7 @@ renderProducts(); renderCart();
 // Código do país + número, só dígitos, sem espaços nem "+". Exemplo (Portugal): "351912345678"
 const WHATSAPP_NUMBER = "351915807519";
 
-function cartTotalValue() { return cart.reduce((s, i) => s + i.price, 0); }
+function cartTotalValue() { return Math.round(cart.reduce((s, i) => s + i.price, 0) * 100) / 100; }
 
 function fazerEncomenda() {
   if (!cart.length) { alert("O teu carrinho está vazio."); return; }
@@ -314,7 +315,7 @@ function fazerEncomenda() {
     return;
   }
 
-  if (!/^\d{9,15}$/.test(WHATSAPP_NUMBER) || WHATSAPP_NUMBER === "351000000000") {
+  if (!/^\d{9,15}$/.test(WHATSAPP_NUMBER) || WHATSAPP_NUMBER === "351915807519") {
     alert("O número de WhatsApp da loja ainda não foi configurado no script.js.");
     return;
   }
